@@ -5,10 +5,26 @@
         <description>Blog of Louis1992 - Zhenchao Gan</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2014-12-18T17:54:53+08:00</lastBuildDate>
-        <pubDate>2014-12-18T17:54:53+08:00</pubDate>
+        <lastBuildDate>2014-12-18T19:41:05+08:00</lastBuildDate>
+        <pubDate>2014-12-18T19:41:05+08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Maximum Xor</title>
+                <description>&lt;p&gt;» Here is my first jekyll post&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Just for test&lt;br /&gt;* Just for Test&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;      I&amp;#39;m trying to write some code  &lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+                <link>http://username.github.io/algorithm/2014/12/18/Max-Xor</link>
+                <guid>http://username.github.io/algorithm/2014/12/18/Max-Xor</guid>
+                <pubDate>2014-12-18T00:00:00+08:00</pubDate>
+        </item>
 
         <item>
                 <title>Jekyll Introduction</title>

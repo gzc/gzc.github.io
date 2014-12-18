@@ -1,8 +1,8 @@
 ---
 layout: post
 category : lessons
-tagline: "Supporting tagline"
-tags : [intro, beginner, jekyll, tutorial]
+tagline: "xor"
+tags : [medium, bit operation]
 ---
 {% include JB/setup %}
 
