@@ -4,7 +4,7 @@
  <title>Blog of Louis1992</title>
  <link href="http://username.github.io/" rel="self"/>
  <link href="http://username.github.io"/>
- <updated>2014-12-18T19:41:05+08:00</updated>
+ <updated>2014-12-18T20:09:42+08:00</updated>
  <id>http://username.github.io</id>
  <author>
    <name>Zhenchao Gan</name>
@@ -17,15 +17,27 @@
    <link href="http://username.github.io/algorithm/2014/12/18/Max-Xor"/>
    <updated>2014-12-18T00:00:00+08:00</updated>
    <id>http://username.github.io/algorithm/2014/12/18/Max-Xor</id>
-   <content type="html">&lt;p&gt;» Here is my first jekyll post&lt;/p&gt;
+   <content type="html">&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Just for test&lt;br /&gt;* Just for Test&lt;/p&gt;
+&lt;li&gt;&lt;a href=&quot;#partI&quot;&gt;Problem Statement&lt;/a&gt;&lt;/li&gt;
 
-&lt;pre&gt;&lt;code&gt;      I&amp;#39;m trying to write some code  &lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content>
+&lt;li&gt;&lt;a href=&quot;#partII&quot;&gt;Step by Step&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#partIII&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#partIIII&quot;&gt;Runtime Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;problem_statement_&quot;&gt;Problem Statement &lt;p id=&#39;partI&#39; /&gt;&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;step_by_step_&quot;&gt;Step by Step &lt;p id=&#39;partII&#39; /&gt;&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;code_&quot;&gt;Code &lt;p id=&#39;partIII&#39; /&gt;&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;runtime_analysis_&quot;&gt;Runtime Analysis &lt;p id=&#39;partIIII&#39; /&gt;&lt;/h2&gt;
+
+&lt;p&gt;18 Dec 2014&lt;/p&gt;</content>
  </entry>
  
  <entry>
