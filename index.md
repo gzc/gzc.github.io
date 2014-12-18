@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello World!
+title: Practice Makes Perfect
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
@@ -19,7 +19,7 @@ In `_config.yml` remember to specify your own data:
       name : Zhenchao Gan
       email : zhenchaogan@hotmail.com
       github : github.com/gzc
-      twitter : username
+      twitter : none
 
 The theme should reference these variables whenever needed.
     
