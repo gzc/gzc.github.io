@@ -5,8 +5,8 @@
         <description>Blog of Louis1992 - Zhenchao Gan</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2014-12-18T20:15:07+08:00</lastBuildDate>
-        <pubDate>2014-12-18T20:15:07+08:00</pubDate>
+        <lastBuildDate>2014-12-18T20:26:47+08:00</lastBuildDate>
+        <pubDate>2014-12-18T20:26:47+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -24,8 +24,8 @@
 &lt;li&gt;&lt;a href=&quot;#partIIII&quot;&gt;Runtime Analysis&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
-&lt;h2 id=&quot;problem_statement_&quot;&gt;Problem Statement &lt;p id=&#39;partI&#39; /&gt;&lt;/h2&gt;
-&lt;hr /&gt;
+&lt;h2 id=&quot;problem_statement&quot;&gt;Problem Statement&lt;/h2&gt;
+&lt;p id=&#39;partI&#39; /&gt;&lt;hr /&gt;
 &lt;h2 id=&quot;step_by_step_&quot;&gt;Step by Step &lt;p id=&#39;partII&#39; /&gt;&lt;/h2&gt;
 &lt;hr /&gt;
 &lt;h2 id=&quot;code_&quot;&gt;Code &lt;p id=&#39;partIII&#39; /&gt;&lt;/h2&gt;
