@@ -4,13 +4,48 @@
  <title>Blog of Louis1992</title>
  <link href="http://username.github.io/" rel="self"/>
  <link href="http://username.github.io"/>
- <updated>2014-12-21T22:27:21+08:00</updated>
+ <updated>2015-01-27T22:35:31+08:00</updated>
  <id>http://username.github.io</id>
  <author>
    <name>Zhenchao Gan</name>
    <email>zhenchaogan@hotmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Coursera Princeton Algorithm</title>
+   <link href="http://username.github.io/algorithm/2015/01/26/Princeton-Algorithm"/>
+   <updated>2015-01-26T00:00:00+08:00</updated>
+   <id>http://username.github.io/algorithm/2015/01/26/Princeton-Algorithm</id>
+   <content type="html">&lt;p&gt;写这个文章纯粹是帮助自己做个笔记，记录自己每周学到叻什么 ^_^ ~~~~ &lt;a href=&quot;https://class.coursera.org/algs4partI-007/lecture&quot;&gt;课程地址&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#partI&quot;&gt;Problem Statement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;week1&quot;&gt;Week1&lt;/h2&gt;
+&lt;p id=&#39;partI&#39; /&gt;
+&lt;h3 id=&quot;week1_2&quot;&gt;Week1讲了什么?&lt;/h3&gt;
+
+&lt;p&gt;Week1主要是介绍了Union-Find算法. 包括&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Quick Find : Find的时间是Constant,但做union时候要把全部一组的都得更新一遍&lt;/li&gt;
+
+&lt;li&gt;Quick Union : 很像树，只需要更新root&lt;/li&gt;
+
+&lt;li&gt;Weighted Quick Union : 小的树挂到大的树，实现中没用height而是用size&lt;/li&gt;
+
+&lt;li&gt;Path Compression : 防止height过高 总之非常有用！&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;&quot;&gt;编程练习&lt;/h3&gt;
+
+&lt;p&gt;是一个关于渗透的习题，模拟水从最高流到最下。 我一开始速度不够，那就要改进isFull和percolate使得constant call times. 那么只要记录每个union是否包含第一排或者最后一排就可以了，所以我多开了两个数组～～ &lt;a href=&quot;https://github.com/gzc/Coursera-Course/tree/master/Princeton-Algorithm/homework1&quot;&gt;我的作业&lt;/a&gt;.&lt;/p&gt;
+&lt;hr /&gt;</content>
+ </entry>
  
  <entry>
    <title>Maximum Xor</title>
