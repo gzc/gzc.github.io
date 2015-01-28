@@ -5,10 +5,35 @@
         <description>Blog of Louis1992 - Zhenchao Gan</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2015-01-27T22:35:31+08:00</lastBuildDate>
-        <pubDate>2015-01-27T22:35:31+08:00</pubDate>
+        <lastBuildDate>2015-01-28T23:22:08+08:00</lastBuildDate>
+        <pubDate>2015-01-28T23:22:08+08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Coursera DSP</title>
+                <description>&lt;p&gt;写这个文章纯粹是帮助自己做个笔记，记录自己每周学到叻什么 ^_^ ~~~~ &lt;a href=&quot;https://class.coursera.org/dsp-005/lecture&quot;&gt;课程地址&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#partI&quot;&gt;Day1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;day1&quot;&gt;Day1&lt;/h2&gt;
+&lt;p id=&#39;partI&#39; /&gt;
+&lt;h3 id=&quot;day1_2&quot;&gt;Day1讲了什么?&lt;/h3&gt;
+
+&lt;p&gt;貌似主要讲了点离散时间信号，介绍性为主。 其中还介绍了KS算法，感觉就是强度越来越低，不断decay. 其中还给了我们生成音乐的代码，我放到了&lt;a href=&quot;https://github.com/gzc/Coursera-Course/tree/master/DSP/Week1&quot;&gt;这里&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;signal_of_the_day&quot;&gt;Signal of The Day&lt;/h3&gt;
+
+&lt;p&gt;介绍了哥特的温度测量，哥特以写作闻名，同时又热爱科学，他用温度计还测量了自己所在城市Yena的温度 ＝ ＝ 然后老师用Moving Average的方法，去除了variations,让曲线smooth,容易看初温度上升这样一个趋势。&lt;/p&gt;
+&lt;hr /&gt;</description>
+                <link>http://username.github.io/dsp/2015/01/27/Digitall-Signal-Processing</link>
+                <guid>http://username.github.io/dsp/2015/01/27/Digitall-Signal-Processing</guid>
+                <pubDate>2015-01-27T00:00:00+08:00</pubDate>
+        </item>
 
         <item>
                 <title>Coursera Princeton Algorithm</title>
@@ -17,7 +42,7 @@
 &lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#partI&quot;&gt;Problem Statement&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#partI&quot;&gt;Week1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 &lt;h2 id=&quot;week1&quot;&gt;Week1&lt;/h2&gt;
