@@ -4,13 +4,40 @@
  <title>Blog of Louis1992</title>
  <link href="http://username.github.io/" rel="self"/>
  <link href="http://username.github.io"/>
- <updated>2015-01-28T23:22:08+08:00</updated>
+ <updated>2015-03-13T22:58:18+08:00</updated>
  <id>http://username.github.io</id>
  <author>
    <name>Zhenchao Gan</name>
    <email>zhenchaogan@hotmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Pattern Recognition and Machine Learning</title>
+   <link href="http://username.github.io/prml/2015/03/13/PRML"/>
+   <updated>2015-03-13T00:00:00+08:00</updated>
+   <id>http://username.github.io/prml/2015/03/13/PRML</id>
+   <content type="html">&lt;p&gt;名门正派&lt;/p&gt;
+
+&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#partI&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p id=&#39;partI&#39; /&gt;
+&lt;h3 id=&quot;chapter11__&quot;&gt;Chapter1.1 - 多项式拟合&lt;/h3&gt;
+
+&lt;p&gt;讲了多项式的拟合，这个的话可以去看Andrew 吴的machine learning, 他介绍的比较详细。&lt;/p&gt;
+
+&lt;h3 id=&quot;chapter12__&quot;&gt;Chapter1.2 - 概率论&lt;/h3&gt;
+
+&lt;p&gt;一些公式都不难，比如下面这个，记得是叫全概率公式，可以这样记：小明挂科的原因 ＝ 小明早恋挂科 ＋ 小明肚子饿挂科 ＋ 小明…… &lt;img src=&quot;/assets/PRML/1.png&quot; alt=&quot;pic&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;贝爷的理论很有意思，大家看看&lt;a href=&quot;http://www.zhihu.com/question/19725590&quot;&gt;这里&lt;/a&gt; 和 &lt;a href=&quot;http://mindhacks.cn/2008/09/21/the-magical-bayesian-method&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;</content>
+ </entry>
  
  <entry>
    <title>Coursera DSP</title>
