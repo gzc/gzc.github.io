@@ -4,13 +4,72 @@
  <title>Blog of Louis1992</title>
  <link href="http://username.github.io/" rel="self"/>
  <link href="http://username.github.io"/>
- <updated>2015-03-13T22:58:18+08:00</updated>
+ <updated>2015-04-19T12:08:15+08:00</updated>
  <id>http://username.github.io</id>
  <author>
    <name>Zhenchao Gan</name>
    <email>zhenchaogan@hotmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>My Preference</title>
+   <link href="http://username.github.io/life/2015/04/19/INFO"/>
+   <updated>2015-04-19T00:00:00+08:00</updated>
+   <id>http://username.github.io/life/2015/04/19/INFO</id>
+   <content type="html">&lt;p&gt;干祯超（Louis）的偏好～～&lt;/p&gt;
+
+&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#partI&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;&quot;&gt;个人简介&lt;/h2&gt;
+&lt;p id=&#39;partI&#39; /&gt;
+&lt;ul&gt;
+&lt;li&gt;姓名：干祯超&lt;/li&gt;
+
+&lt;li&gt;性别：男&lt;/li&gt;
+
+&lt;li&gt;邮箱：303542123@qq.com&lt;/li&gt;
+
+&lt;li&gt;年龄：22&lt;/li&gt;
+
+&lt;li&gt;本科所在学校：上海交通大学&lt;/li&gt;
+
+&lt;li&gt;到达美帝的时间：机票没定，应该是9月初&lt;/li&gt;
+
+&lt;li&gt;是否已有对象（汗，有对象的就不安排男女混住了）：无&lt;/li&gt;
+
+&lt;li&gt;专业，小方向，是否有转系计划： CSE-CS&lt;/li&gt;
+
+&lt;li&gt;会不会做饭（会做到何种程度）：不会，暑假学&lt;/li&gt;
+
+&lt;li&gt;会不会开车，有无购车，学车计划：过了科目一…还在学&lt;/li&gt;
+
+&lt;li&gt;是否愿意与异性混住大suite：当然 ＝ ＝有房住就行&lt;/li&gt;
+
+&lt;li&gt;第一次递交宿舍申请的时间（第一次收到ARCH邮件的时间）：2-24&lt;/li&gt;
+
+&lt;li&gt;申请的入住的时间：8-24&lt;/li&gt;
+
+&lt;li&gt;对舍友的期待：爱干净，不熬夜。&lt;/li&gt;
+
+&lt;li&gt;打不打游戏，玩什么游戏，对游戏的容忍程度：不打游戏…只要不熬夜玩就行。&lt;/li&gt;
+
+&lt;li&gt;可以接受的大suite人数上限与下限（以2b1b户型为例）：2-4&lt;/li&gt;
+
+&lt;li&gt;简单的描述一下你的生活习性：作息正常，吃饭正常，比较健康，有时候晚上跑步。&lt;/li&gt;
+
+&lt;li&gt;其他偏好（是否想睡客厅，是否愿意与其他同学分享room 等等等等）：最好尽量一个人一个room吧&lt;/li&gt;
+
+&lt;li&gt;考虑范围内的房源价格（分摊后愿意支付的金额范围）：&amp;lt;= 800$（适当浮动 ＝ ＝）&lt;/li&gt;
+
+&lt;li&gt;是否有想住一起的同学：目前木有&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;</content>
+ </entry>
  
  <entry>
    <title>Pattern Recognition and Machine Learning</title>
@@ -36,6 +95,8 @@
 &lt;p&gt;一些公式都不难，比如下面这个，记得是叫全概率公式，可以这样记：小明挂科的原因 ＝ 小明早恋挂科 ＋ 小明肚子饿挂科 ＋ 小明…… &lt;img src=&quot;/assets/PRML/1.png&quot; alt=&quot;pic&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;贝爷的理论很有意思，大家看看&lt;a href=&quot;http://www.zhihu.com/question/19725590&quot;&gt;这里&lt;/a&gt; 和 &lt;a href=&quot;http://mindhacks.cn/2008/09/21/the-magical-bayesian-method&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;关于高斯分布，利用data sets,我们可以用最大似然法计算出mean和variance,如下图 &lt;img src=&quot;/assets/PRML/2.png&quot; alt=&quot;pic&quot; /&gt; 但是variance有个(N/N-1)的偏差, &lt;img src=&quot;/assets/PRML/3.png&quot; alt=&quot;pic&quot; /&gt;&lt;/p&gt;
 &lt;hr /&gt;</content>
  </entry>
  
