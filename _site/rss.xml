@@ -5,8 +5,8 @@
         <description>Blog of Louis1992 - Zhenchao Gan</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2015-04-25T23:06:34+08:00</lastBuildDate>
-        <pubDate>2015-04-25T23:06:34+08:00</pubDate>
+        <lastBuildDate>2015-04-25T23:08:36+08:00</lastBuildDate>
+        <pubDate>2015-04-25T23:08:36+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -35,7 +35,7 @@
 &lt;ul&gt;
 &lt;li&gt;CRC(m) is the checksum of MESSAGE m, here it’s not important so do not care.&lt;/li&gt;
 
-&lt;li&gt;IV is 24-bits string, increasing by every frame from 0 and k is a 104-bits string so the total length is 108.&lt;/li&gt;
+&lt;li&gt;IV is 24-bits string, increasing by every frame from 0 and k is a 104-bits string so the total length is 128.&lt;/li&gt;
 
 &lt;li&gt;PRG is a pseudorandom generator algorithm and the input is IV || k , || means concatenation.&lt;/li&gt;
 

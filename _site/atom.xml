@@ -4,7 +4,7 @@
  <title>Blog of Louis1992</title>
  <link href="http://username.github.io/" rel="self"/>
  <link href="http://username.github.io"/>
- <updated>2015-04-25T23:06:34+08:00</updated>
+ <updated>2015-04-25T23:08:36+08:00</updated>
  <id>http://username.github.io</id>
  <author>
    <name>Zhenchao Gan</name>
@@ -40,7 +40,7 @@
 &lt;ul&gt;
 &lt;li&gt;CRC(m) is the checksum of MESSAGE m, here it’s not important so do not care.&lt;/li&gt;
 
-&lt;li&gt;IV is 24-bits string, increasing by every frame from 0 and k is a 104-bits string so the total length is 108.&lt;/li&gt;
+&lt;li&gt;IV is 24-bits string, increasing by every frame from 0 and k is a 104-bits string so the total length is 128.&lt;/li&gt;
 
 &lt;li&gt;PRG is a pseudorandom generator algorithm and the input is IV || k , || means concatenation.&lt;/li&gt;
 
