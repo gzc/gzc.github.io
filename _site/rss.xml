@@ -5,8 +5,8 @@
         <description>Blog of Louis1992 - Zhenchao Gan</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2015-04-25T22:51:21+08:00</lastBuildDate>
-        <pubDate>2015-04-25T22:51:21+08:00</pubDate>
+        <lastBuildDate>2015-04-25T22:59:48+08:00</lastBuildDate>
+        <pubDate>2015-04-25T22:59:48+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -42,13 +42,13 @@
 &lt;li&gt;The receiver receive the ciphertext, plus a IV in front of ciphertext and apply the decoding algorithm.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
-&lt;h2 id=&quot;bugi&quot;&gt;BugI&lt;/h2&gt;
+&lt;h2 id=&quot;bugilimited_iv&quot;&gt;BugI-limited IV&lt;/h2&gt;
 &lt;p id=&#39;partI&#39; /&gt;
 &lt;h3 id=&quot;the_limited_24bits_iv&quot;&gt;The limited 24-bits IV&lt;/h3&gt;
 
 &lt;p&gt;802.11b WEP algorithm uses a 24-bit length IV, which means we have only $$2^{24} \approx {16million}$$ unique frame numbers. That means every 16million frames we will obtain the same keys, under such condition we could apply a two-time pad attack.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id=&quot;bugii&quot;&gt;BugII&lt;/h2&gt;
+&lt;h2 id=&quot;bugiipowercycle&quot;&gt;BugII-Powercycle&lt;/h2&gt;
 &lt;p id=&#39;partII&#39; /&gt;
 &lt;h3 id=&quot;powercycle&quot;&gt;Powercycle&lt;/h3&gt;
 
@@ -58,7 +58,7 @@
 
 &lt;p&gt;Under such circumstances, we could also apply two-time pad attack.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id=&quot;related_keys&quot;&gt;Related keys&lt;/h2&gt;
+&lt;h2 id=&quot;bugiiirelated_keys&quot;&gt;BugIII-Related keys&lt;/h2&gt;
 &lt;p id=&#39;partIII&#39; /&gt;
 &lt;h3 id=&quot;rc4&quot;&gt;RC4&lt;/h3&gt;
 
@@ -68,7 +68,7 @@
 
 &lt;p&gt;key for frame #2: (2||k)&lt;/p&gt;
 
-&lt;p&gt;and so on.&lt;/p&gt;
+&lt;p&gt;and so on. These keys are related, they are almost the same. And after processed by RC4, we could also find some relation.&lt;/p&gt;
 
 &lt;h3 id=&quot;attack&quot;&gt;Attack&lt;/h3&gt;
 

@@ -186,13 +186,13 @@
 <li>The receiver receive the ciphertext, plus a IV in front of ciphertext and apply the decoding algorithm.</li>
 </ul>
 <hr />
-<h2 id="bugi">BugI</h2>
+<h2 id="bugilimited_iv">BugI-limited IV</h2>
 <p id='partI' />
 <h3 id="the_limited_24bits_iv">The limited 24-bits IV</h3>
 
 <p>802.11b WEP algorithm uses a 24-bit length IV, which means we have only $$2^{24} \approx {16million}$$ unique frame numbers. That means every 16million frames we will obtain the same keys, under such condition we could apply a two-time pad attack.</p>
 <hr />
-<h2 id="bugii">BugII</h2>
+<h2 id="bugiipowercycle">BugII-Powercycle</h2>
 <p id='partII' />
 <h3 id="powercycle">Powercycle</h3>
 
@@ -202,7 +202,7 @@
 
 <p>Under such circumstances, we could also apply two-time pad attack.</p>
 <hr />
-<h2 id="related_keys">Related keys</h2>
+<h2 id="bugiiirelated_keys">BugIII-Related keys</h2>
 <p id='partIII' />
 <h3 id="rc4">RC4</h3>
 
@@ -212,7 +212,7 @@
 
 <p>key for frame #2: (2||k)</p>
 
-<p>and so on.</p>
+<p>and so on. These keys are related, they are almost the same. And after processed by RC4, we could also find some relation.</p>
 
 <h3 id="attack">Attack</h3>
 
