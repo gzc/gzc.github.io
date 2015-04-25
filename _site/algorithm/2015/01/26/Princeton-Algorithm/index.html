@@ -156,34 +156,38 @@
 
 <div class="row">
   <div class="span8">
-    <p>写这个文章纯粹是帮助自己做个笔记，记录自己每周学到叻什么 ^_^ ~~~~ <a href="https://class.coursera.org/algs4partI-007/lecture">课程地址</a>.</p>
+    
+<p>写这个文章纯粹是帮助自己做个笔记，记录自己每周学到叻什么 ^_^ ~~~~
+<a href="https://class.coursera.org/algs4partI-007/lecture">课程地址</a>.</p>
 
 <h2 id="contents">Contents</h2>
-
 <ul>
-<li><a href="#partI">Week1</a></li>
+  <li><a href="#partI">Week1</a></li>
 </ul>
+
 <hr />
+
 <h2 id="week1">Week1</h2>
-<p id='partI' />
-<h3 id="week1_2">Week1讲了什么?</h3>
+<p id="partI"></p>
 
-<p>Week1主要是介绍了Union-Find算法. 包括</p>
+<h3 id="week1-1">Week1讲了什么?</h3>
 
-<ul>
-<li>Quick Find : Find的时间是Constant,但做union时候要把全部一组的都得更新一遍</li>
+<p>Week1主要是介绍了Union-Find算法. 包括
+- Quick Find : Find的时间是Constant,但做union时候要把全部一组的都得更新一遍
+- Quick Union : 很像树，只需要更新root
+- Weighted Quick Union : 小的树挂到大的树，实现中没用height而是用size
+- Path Compression : 防止height过高
+总之非常有用！</p>
 
-<li>Quick Union : 很像树，只需要更新root</li>
+<h3 id="section">编程练习</h3>
+<p>是一个关于渗透的习题，模拟水从最高流到最下。
+我一开始速度不够，那就要改进isFull和percolate使得constant call times.
+那么只要记录每个union是否包含第一排或者最后一排就可以了，所以我多开了两个数组～～
+<a href="https://github.com/gzc/Coursera-Course/tree/master/Princeton-Algorithm/homework1">我的作业</a>.</p>
 
-<li>Weighted Quick Union : 小的树挂到大的树，实现中没用height而是用size</li>
-
-<li>Path Compression : 防止height过高 总之非常有用！</li>
-</ul>
-
-<h3 id="">编程练习</h3>
-
-<p>是一个关于渗透的习题，模拟水从最高流到最下。 我一开始速度不够，那就要改进isFull和percolate使得constant call times. 那么只要记录每个union是否包含第一排或者最后一排就可以了，所以我多开了两个数组～～ <a href="https://github.com/gzc/Coursera-Course/tree/master/Princeton-Algorithm/homework1">我的作业</a>.</p>
 <hr />
+
+
     <hr>
     <div class="pagination btn-group">
       

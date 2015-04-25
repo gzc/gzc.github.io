@@ -156,44 +156,44 @@
 
 <div class="row">
   <div class="span8">
-    <p>Bugs in 802.11b WEP and let’s break it!</p>
+    
+<p>Bugs in 802.11b WEP and let’s break it!</p>
 
 <h2 id="contents">Contents</h2>
-
 <ul>
-<li><a href="#part0">Intro</a></li>
-
-<li><a href="#partI">BugI</a></li>
-
-<li><a href="#partII">BugII</a></li>
-
-<li><a href="#partIII">BugIII</a></li>
+  <li><a href="#part0">Intro</a></li>
+  <li><a href="#partI">BugI</a></li>
+  <li><a href="#partII">BugII</a></li>
+  <li><a href="#partIII">BugIII</a></li>
 </ul>
+
 <hr />
+
 <h2 id="intro">Intro</h2>
-<p id='part0' />
-<p>Below is the picture describing the algorithm for 802.11b WEP. <img src="/assets/802.11b/1.png" alt="pic" /></p>
+<p id="part0"></p>
+<p>Below is the picture describing the algorithm for 802.11b WEP.
+<img src="/assets/802.11b/1.png" alt="pic" />
+### Main points
+- CRC(m) is the checksum of MESSAGE m, here it’s not important so do not care.
+- IV is 24-bits string, increasing by every frame from 0 and k is a 104-bits string so the total length is 108.
+- PRG is a pseudorandom generator algorithm and the input is IV || k , || means concatenation.
+- The receiver receive the ciphertext, plus a IV in front of ciphertext and apply the decoding algorithm.
+———————————-</p>
 
-<h3 id="main_points">Main points</h3>
+<h2 id="bugi-limited-iv">BugI-limited IV</h2>
+<p id="partI"></p>
 
-<ul>
-<li>CRC(m) is the checksum of MESSAGE m, here it’s not important so do not care.</li>
+<h3 id="the-limited-24-bits-iv">The limited 24-bits IV</h3>
 
-<li>IV is 24-bits string, increasing by every frame from 0 and k is a 104-bits string so the total length is 108.</li>
+<p>802.11b WEP algorithm uses a 24-bit length IV, which means we have only 
+<script type="math/tex">2^{24} \approx {16million}</script> unique frame numbers. That means every 16million frames we will obtain the same keys,
+under such condition we could apply a two-time pad attack.</p>
 
-<li>PRG is a pseudorandom generator algorithm and the input is IV || k , || means concatenation.</li>
-
-<li>The receiver receive the ciphertext, plus a IV in front of ciphertext and apply the decoding algorithm.</li>
-</ul>
 <hr />
-<h2 id="bugilimited_iv">BugI-limited IV</h2>
-<p id='partI' />
-<h3 id="the_limited_24bits_iv">The limited 24-bits IV</h3>
 
-<p>802.11b WEP algorithm uses a 24-bit length IV, which means we have only $$2^{24} \approx {16million}$$ unique frame numbers. That means every 16million frames we will obtain the same keys, under such condition we could apply a two-time pad attack.</p>
-<hr />
-<h2 id="bugiipowercycle">BugII-Powercycle</h2>
-<p id='partII' />
+<h2 id="bugii-powercycle">BugII-Powercycle</h2>
+<p id="partII"></p>
+
 <h3 id="powercycle">Powercycle</h3>
 
 <p>Every powercycle IV will reset to 0.</p>
@@ -201,22 +201,44 @@
 <p>As a result, we could get a lot frames with IV set to 0.</p>
 
 <p>Under such circumstances, we could also apply two-time pad attack.</p>
-<hr />
-<h2 id="bugiiirelated_keys">BugIII-Related keys</h2>
-<p id='partIII' />
-<h3 id="rc4">RC4</h3>
 
+<hr />
+
+<h2 id="bugiii-related-keys">BugIII-Related keys</h2>
+<p id="partIII"></p>
+
+<h3 id="rc4">RC4</h3>
 <p>PRG in WEP use a algorithm called RC4</p>
 
-<p>key for frame #1: (1||k)</p>
+<table>
+  <tbody>
+    <tr>
+      <td>key for frame #1: (1</td>
+      <td> </td>
+      <td>k)</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>key for frame #2: (2||k)</p>
+<table>
+  <tbody>
+    <tr>
+      <td>key for frame #2: (2</td>
+      <td> </td>
+      <td>k)</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>and so on. These keys are related, they are almost the same. And after processed by RC4, we could also find some relation.</p>
 
 <h3 id="attack">Attack</h3>
+<p>Fluhrer,Mantin ans Shamir in 2001 found that after 
+<script type="math/tex">10^6 frames \space you \space can \space recover \space the \space secret   \space key</script>
+Later others proposed better method shows
+<script type="math/tex">40000 frames \space are  \space sufficient</script></p>
 
-<p>Fluhrer,Mantin ans Shamir in 2001 found that after $$10^6 frames \space you \space can \space recover \space the \space secret \space key$$ Later others proposed better method shows $$40000 frames \space are \space sufficient$$</p>
+
     <hr>
     <div class="pagination btn-group">
       
