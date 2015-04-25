@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Practice Makes Perfect
-tagline: --I MISS U
+title: CRYPTO LAB
+tagline: --BREAK IT!
 ---
 {% include JB/setup %}
 

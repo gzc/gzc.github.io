@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>
       
-        Coursera Princeton Algorithm - 
+        802.11b WEP - 
       
       Blog of Louis1992
     </title>
@@ -147,51 +147,84 @@
           
 <div class="page-header">
   <h1>
-    Coursera Princeton Algorithm 
+    802.11b WEP 
     
-      <small>algorithm</small>
+      <small>Let's break 802.11b WEP</small>
     
   </h1>
 </div>
 
 <div class="row">
   <div class="span8">
-    <p>写这个文章纯粹是帮助自己做个笔记，记录自己每周学到叻什么 ^_^ ~~~~ <a href="https://class.coursera.org/algs4partI-007/lecture">课程地址</a>.</p>
+    <p>Bugs in 802.11b WEP and let’s break it!</p>
 
 <h2 id="contents">Contents</h2>
 
 <ul>
-<li><a href="#partI">Week1</a></li>
+<li><a href="#part0">Intro</a></li>
+
+<li><a href="#partI">BugI</a></li>
+
+<li><a href="#partII">BugII</a></li>
+
+<li><a href="#partIII">BugIII</a></li>
 </ul>
 <hr />
-<h2 id="week1">Week1</h2>
-<p id='partI' />
-<h3 id="week1_2">Week1讲了什么?</h3>
+<h2 id="intro">Intro</h2>
+<p id='part0' />
+<p>Below is the picture describing the algorithm for 802.11b WEP. <img src="/assets/802.11b/1.png" alt="pic" /></p>
 
-<p>Week1主要是介绍了Union-Find算法. 包括</p>
+<h3 id="main_points">Main points</h3>
 
 <ul>
-<li>Quick Find : Find的时间是Constant,但做union时候要把全部一组的都得更新一遍</li>
+<li>CRC(m) is the checksum of MESSAGE m, here it’s not important so do not care.</li>
 
-<li>Quick Union : 很像树，只需要更新root</li>
+<li>IV is 24-bits string, increasing by every frame from 0 and k is a 104-bits string so the total length is 108.</li>
 
-<li>Weighted Quick Union : 小的树挂到大的树，实现中没用height而是用size</li>
+<li>PRG is a pseudorandom generator algorithm and the input is IV || k , || means concatenation.</li>
 
-<li>Path Compression : 防止height过高 总之非常有用！</li>
+<li>The receiver receive the ciphertext, plus a IV in front of ciphertext and apply the decoding algorithm.</li>
 </ul>
-
-<h3 id="">编程练习</h3>
-
-<p>是一个关于渗透的习题，模拟水从最高流到最下。 我一开始速度不够，那就要改进isFull和percolate使得constant call times. 那么只要记录每个union是否包含第一排或者最后一排就可以了，所以我多开了两个数组～～ <a href="https://github.com/gzc/Coursera-Course/tree/master/Princeton-Algorithm/homework1">我的作业</a>.</p>
 <hr />
+<h2 id="bugi">BugI</h2>
+<p id='partI' />
+<h3 id="the_limited_24bits_iv">The limited 24-bits IV</h3>
+
+<p>802.11b WEP algorithm uses a 24-bit length IV, which means we have only $$2^{24} \approx {16million}$$ unique frame numbers. That means every 16million frames we will obtain the same keys, under such condition we could apply a two-time pad attack.</p>
+<hr />
+<h2 id="bugii">BugII</h2>
+<p id='partII' />
+<h3 id="powercycle">Powercycle</h3>
+
+<p>Every powercycle IV will reset to 0.</p>
+
+<p>As a result, we could get a lot frames with IV set to 0.</p>
+
+<p>Under such circumstances, we could also apply two-time pad attack.</p>
+<hr />
+<h2 id="related_keys">Related keys</h2>
+<p id='partIII' />
+<h3 id="rc4">RC4</h3>
+
+<p>PRG in WEP use a algorithm called RC4</p>
+
+<p>key for frame #1: (1||k)</p>
+
+<p>key for frame #2: (2||k)</p>
+
+<p>and so on.</p>
+
+<h3 id="attack">Attack</h3>
+
+<p>Fluhrer,Mantin ans Shamir in 2001 found that after $$10^6 frames \space you \space can \space recover \space the \space secret \space key$$ Later others proposed better method shows $$40000 frames \space are \space sufficient$$</p>
     <hr>
     <div class="pagination btn-group">
       
-        <a class="btn prev" href="/algorithm/2014/12/18/Max-Xor" title="Maximum Xor">&larr; Previous</a>
+        <a class="btn prev" href="/life/2015/04/19/INFO" title="My Preference">&larr; Previous</a>
       
         <a class="btn" href="/archive.html">Archive</a>
       
-        <a class="btn next" href="/dsp/2015/01/27/Digitall-Signal-Processing" title="Coursera DSP">Next &rarr;</a>
+        <a class="btn next disabled">Next &rarr;</a>
       
     </div>
     <hr>
@@ -221,13 +254,13 @@
   <div class="span4">
     <section>
       <h4>Published</h4>
-      <div class="date"><span>26 January 2015</span></div>
+      <div class="date"><span>25 April 2015</span></div>
     </section>
     
       <section>
         <h4>Category</h4>
         <span class="category">
-          algorithm
+          crypto
         </span>
       </section>
          
@@ -241,9 +274,9 @@
 
   
      
-    	<li><a href="/tags.html#Coursera-ref">Coursera <span>2</span></a></li>
+    	<li><a href="/tags.html#802.11b-ref">802.11b <span>1</span></a></li>
      
-    	<li><a href="/tags.html#algorithm-ref">algorithm <span>1</span></a></li>
+    	<li><a href="/tags.html#WEP-ref">WEP <span>1</span></a></li>
     
   
 

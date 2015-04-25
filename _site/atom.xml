@@ -4,13 +4,81 @@
  <title>Blog of Louis1992</title>
  <link href="http://username.github.io/" rel="self"/>
  <link href="http://username.github.io"/>
- <updated>2015-04-19T12:08:15+08:00</updated>
+ <updated>2015-04-25T22:51:21+08:00</updated>
  <id>http://username.github.io</id>
  <author>
    <name>Zhenchao Gan</name>
    <email>zhenchaogan@hotmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>802.11b WEP</title>
+   <link href="http://username.github.io/crypto/2015/04/25/802.11b-WEP"/>
+   <updated>2015-04-25T00:00:00+08:00</updated>
+   <id>http://username.github.io/crypto/2015/04/25/802.11b-WEP</id>
+   <content type="html">&lt;p&gt;Bugs in 802.11b WEP and let’s break it!&lt;/p&gt;
+
+&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#part0&quot;&gt;Intro&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#partI&quot;&gt;BugI&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#partII&quot;&gt;BugII&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#partIII&quot;&gt;BugIII&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;p id=&#39;part0&#39; /&gt;
+&lt;p&gt;Below is the picture describing the algorithm for 802.11b WEP. &lt;img src=&quot;/assets/802.11b/1.png&quot; alt=&quot;pic&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;main_points&quot;&gt;Main points&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CRC(m) is the checksum of MESSAGE m, here it’s not important so do not care.&lt;/li&gt;
+
+&lt;li&gt;IV is 24-bits string, increasing by every frame from 0 and k is a 104-bits string so the total length is 108.&lt;/li&gt;
+
+&lt;li&gt;PRG is a pseudorandom generator algorithm and the input is IV || k , || means concatenation.&lt;/li&gt;
+
+&lt;li&gt;The receiver receive the ciphertext, plus a IV in front of ciphertext and apply the decoding algorithm.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;bugi&quot;&gt;BugI&lt;/h2&gt;
+&lt;p id=&#39;partI&#39; /&gt;
+&lt;h3 id=&quot;the_limited_24bits_iv&quot;&gt;The limited 24-bits IV&lt;/h3&gt;
+
+&lt;p&gt;802.11b WEP algorithm uses a 24-bit length IV, which means we have only $$2^{24} \approx {16million}$$ unique frame numbers. That means every 16million frames we will obtain the same keys, under such condition we could apply a two-time pad attack.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;bugii&quot;&gt;BugII&lt;/h2&gt;
+&lt;p id=&#39;partII&#39; /&gt;
+&lt;h3 id=&quot;powercycle&quot;&gt;Powercycle&lt;/h3&gt;
+
+&lt;p&gt;Every powercycle IV will reset to 0.&lt;/p&gt;
+
+&lt;p&gt;As a result, we could get a lot frames with IV set to 0.&lt;/p&gt;
+
+&lt;p&gt;Under such circumstances, we could also apply two-time pad attack.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;related_keys&quot;&gt;Related keys&lt;/h2&gt;
+&lt;p id=&#39;partIII&#39; /&gt;
+&lt;h3 id=&quot;rc4&quot;&gt;RC4&lt;/h3&gt;
+
+&lt;p&gt;PRG in WEP use a algorithm called RC4&lt;/p&gt;
+
+&lt;p&gt;key for frame #1: (1||k)&lt;/p&gt;
+
+&lt;p&gt;key for frame #2: (2||k)&lt;/p&gt;
+
+&lt;p&gt;and so on.&lt;/p&gt;
+
+&lt;h3 id=&quot;attack&quot;&gt;Attack&lt;/h3&gt;
+
+&lt;p&gt;Fluhrer,Mantin ans Shamir in 2001 found that after $$10^6 frames \space you \space can \space recover \space the \space secret \space key$$ Later others proposed better method shows $$40000 frames \space are \space sufficient$$&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>My Preference</title>
