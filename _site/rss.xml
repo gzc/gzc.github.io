@@ -5,10 +5,45 @@
         <description>Blog of Louis1992 - Zhenchao Gan</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2015-04-25T23:08:36+08:00</lastBuildDate>
-        <pubDate>2015-04-25T23:08:36+08:00</pubDate>
+        <lastBuildDate>2015-04-26T20:24:48+08:00</lastBuildDate>
+        <pubDate>2015-04-26T20:24:48+08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>One-time is good, Two-time is bad</title>
+                <description>&lt;p&gt;Let’s break two-time pad!&lt;/p&gt;
+
+&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#part0&quot;&gt;Intro&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#partI&quot;&gt;Attack&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;p id=&#39;part0&#39; /&gt;
+&lt;p&gt;Below is the problem sets about this attack. &lt;a href=&quot;https://class.coursera.org/crypto-014/quiz/feedback?submission_id=23073&quot;&gt;Stanford&lt;/a&gt; and &lt;a href=&quot;https://class.coursera.org/cryptography-002/wiki/Assignment_2&quot;&gt;Maryland&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is the solution&lt;a href=&quot;https://github.com/gzc/Coursera-Course/tree/master/Stanford-Crypto1/week1&quot;&gt;Stanford&lt;/a&gt; then &lt;a href=&quot;https://github.com/gzc/Coursera-Course/tree/master/Maryland-Cryptography/Programming_Assignment_2&quot;&gt;Maryland&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;main_points&quot;&gt;Main points&lt;/h3&gt;
+
+&lt;p&gt;if the same key used twice, then the result of (c1 Xor c2) will reveal a lot information about the original messages.&lt;/p&gt;
+
+&lt;p&gt;For example, the space is very crucial. ’ ’ ^ ‘a’ = ‘A’ and ’ ’ ^ ‘A’ = ‘a’. When ’ ’ Xor with a letter then it will produce corresponding letter. So it is the very start to break two-time pad.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;attack&quot;&gt;Attack&lt;/h2&gt;
+&lt;p id=&#39;part0&#39; /&gt;
+&lt;p&gt;Once we know the drawbacks behind it, we could easily break it.&lt;/p&gt;
+
+&lt;p&gt;Everything is covered in my code above.&lt;/p&gt;
+&lt;hr /&gt;</description>
+                <link>http://username.github.io/crypto/2015/04/26/two-time-pad</link>
+                <guid>http://username.github.io/crypto/2015/04/26/two-time-pad</guid>
+                <pubDate>2015-04-26T00:00:00+08:00</pubDate>
+        </item>
 
         <item>
                 <title>802.11b WEP</title>

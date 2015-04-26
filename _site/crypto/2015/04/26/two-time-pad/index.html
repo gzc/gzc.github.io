@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>
       
-        Categories - 
+        One-time is good, Two-time is bad - 
       
       Blog of Louis1992
     </title>
@@ -73,7 +73,7 @@
     
       
       	
-      	<li class="active"><a href="/categories.html" class="active">Categories</a></li>
+      	<li><a href="/categories.html">Categories</a></li>
       	
       
     
@@ -145,192 +145,111 @@
       <div class="container">
         <div class="content">
           
-<div class="page-header-wrapper">
-	<div class="page-header">
-  		<h1>Categories </h1>
-  	</div>
+<div class="page-header">
+  <h1>
+    One-time is good, Two-time is bad 
+    
+      <small>Let's break two-time pad</small>
+    
+  </h1>
 </div>
 
 <div class="row">
-  <div class="span12">
-    
+  <div class="span8">
+    <p>Let’s break two-time pad!</p>
 
-<ul class="tag_box inline">
-  
-  
+<h2 id="contents">Contents</h2>
 
+<ul>
+<li><a href="#part0">Intro</a></li>
 
-  
-     
-    	<li><a href="/categories.html#lessons-ref">
-    		lessons <span>1</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#algorithm-ref">
-    		algorithm <span>2</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#dsp-ref">
-    		dsp <span>1</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#prml-ref">
-    		prml <span>1</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#life-ref">
-    		life <span>1</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#crypto-ref">
-    		crypto <span>2</span>
-    	</a></li>
-    
-  
-
-
+<li><a href="#partI">Attack</a></li>
 </ul>
+<hr />
+<h2 id="intro">Intro</h2>
+<p id='part0' />
+<p>Below is the problem sets about this attack. <a href="https://class.coursera.org/crypto-014/quiz/feedback?submission_id=23073">Stanford</a> and <a href="https://class.coursera.org/cryptography-002/wiki/Assignment_2">Maryland</a></p>
 
+<p>Here is the solution<a href="https://github.com/gzc/Coursera-Course/tree/master/Stanford-Crypto1/week1">Stanford</a> then <a href="https://github.com/gzc/Coursera-Course/tree/master/Maryland-Cryptography/Programming_Assignment_2">Maryland</a></p>
 
- 
-  <h2 id="lessons-ref">lessons</h2>
-  <ul>
+<h3 id="main_points">Main points</h3>
+
+<p>if the same key used twice, then the result of (c1 Xor c2) will reveal a lot information about the original messages.</p>
+
+<p>For example, the space is very crucial. ’ ’ ^ ‘a’ = ‘A’ and ’ ’ ^ ‘A’ = ‘a’. When ’ ’ Xor with a letter then it will produce corresponding letter. So it is the very start to break two-time pad.</p>
+<hr />
+<h2 id="attack">Attack</h2>
+<p id='part0' />
+<p>Once we know the drawbacks behind it, we could easily break it.</p>
+
+<p>Everything is covered in my code above.</p>
+<hr />
+    <hr>
+    <div class="pagination btn-group">
       
+        <a class="btn prev" href="/crypto/2015/04/25/802.11b-WEP" title="802.11b WEP">&larr; Previous</a>
+      
+        <a class="btn" href="/archive.html">Archive</a>
+      
+        <a class="btn next disabled">Next &rarr;</a>
+      
+    </div>
+    <hr>
     
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <section>
+      <h4>Published</h4>
+      <div class="date"><span>26 April 2015</span></div>
+    </section>
+    
+      <section>
+        <h4>Category</h4>
+        <span class="category">
+          crypto
+        </span>
+      </section>
+         
+    
+      <section>
+        <h4>Tags</h4>
+        <ul class="tag_box">
+          
+          
 
 
   
-    
-      
-      	
-      	<li><a href="/lessons/2011/12/29/jekyll-introduction">Jekyll Introduction</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="algorithm-ref">algorithm</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/algorithm/2015/01/26/Princeton-Algorithm">Coursera Princeton Algorithm</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/algorithm/2014/12/18/Max-Xor">Maximum Xor</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="dsp-ref">dsp</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/dsp/2015/01/27/Digitall-Signal-Processing">Coursera DSP</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="prml-ref">prml</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/prml/2015/03/13/PRML">Pattern Recognition and Machine Learning</a></li>
-      	
-      
+     
+    	<li><a href="/tags.html#ont-time pad-ref">ont-time pad <span>1</span></a></li>
     
   
 
 
 
-  </ul>
- 
-  <h2 id="life-ref">life</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/life/2015/04/19/INFO">My Preference</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="crypto-ref">crypto</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/crypto/2015/04/26/two-time-pad">One-time is good, Two-time is bad</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/crypto/2015/04/25/802.11b-WEP">802.11b WEP</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
-
-
-
+        </ul>
+      </section>
+             
   </div>
 </div>
 
