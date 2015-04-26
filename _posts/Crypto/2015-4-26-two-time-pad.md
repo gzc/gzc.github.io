@@ -41,4 +41,6 @@ Once we know the drawbacks behind it, we could easily break it.
 
 Everything is covered in my code above.
 
+If you are a Chinese, you could read [detail](http://blog.csdn.net/abcd1992719g/article/details/23949975)
+
 ----------------------------------
