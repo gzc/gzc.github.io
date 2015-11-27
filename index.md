@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CRYPTO LAB
+title: Systems LAB
 tagline: --BREAK IT!
 ---
 {% include JB/setup %}
@@ -9,7 +9,7 @@ tagline: --BREAK IT!
 
     English name : Louis
     Chinese name : Zhenchao Gan
-    school : Shanghai Jiao Tong Univ.
+    school : SJTU | UCSD
     email : zhenchaogan@hotmail.com
     github : github.com/gzc
 

@@ -4,7 +4,7 @@
  <title>Blog of Louis1992</title>
  <link href="http://username.github.io/" rel="self"/>
  <link href="http://username.github.io"/>
- <updated>2015-04-26T20:31:15+08:00</updated>
+ <updated>2015-11-27T00:31:30-08:00</updated>
  <id>http://username.github.io</id>
  <author>
    <name>Zhenchao Gan</name>
@@ -13,9 +13,97 @@
 
  
  <entry>
+   <title>The UNIX Time-Sharing System</title>
+   <link href="http://username.github.io/systems/2015/11/27/The_UNIX_Time-Sharing_System"/>
+   <updated>2015-11-27T00:00:00-08:00</updated>
+   <id>http://username.github.io/systems/2015/11/27/The_UNIX_Time-Sharing_System</id>
+   <content type="html">&lt;p&gt;Bugs in 802.11b WEP and let’s break it!&lt;/p&gt;
+
+&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#part0&quot;&gt;OVERVIEW&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#partI&quot;&gt;File System&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#partII&quot;&gt;Process&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#partIII&quot;&gt;Shell&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;overview&quot;&gt;OVERVIEW&lt;/h2&gt;
+&lt;p id=&#39;part0&#39; /&gt;
+&lt;p&gt;In their paper, they discussed about about a simple, multi-user, and interactive operating system called Unix for the computer PDP-11/40 and 45.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;File System.&lt;/li&gt;
+
+&lt;li&gt;Process.&lt;/li&gt;
+
+&lt;li&gt;Shell.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;file_system&quot;&gt;File System&lt;/h2&gt;
+&lt;p id=&#39;partI&#39; /&gt;
+&lt;p&gt;In unix there are three types of files, these are ordinary, directory, and special files.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;An ordinary file contains information as strings separated by a new line.&lt;/li&gt;
+
+&lt;li&gt;A directory imposes a structure of the set of ordinary files. It lets the user to organize the ordinary files into a tree form. The tree structure was imposed by defining a root directory, where all searches start. Every directory has a parent directory and all directories is rooted at the root directory. One major contribution of this paper is on allowing links which are not allowed in existing larger operating systems. Instead of the actual directory, links are pointers to a directory. What happens to a directory happens to all links that are pointed in that directory.&lt;/li&gt;
+
+&lt;li&gt;The third type of file is called special files. These files are associated with I/O devices that are supported by UNIX, examples of which are mountable devices such as external memory drives. Treating I/O devices as files, according to the paper has threefold advantage.&lt;/li&gt;
+
+&lt;li&gt;Removable File Systems ： no link may exist between one file system hierarchy and another.&lt;/li&gt;
+
+&lt;li&gt;File Protection : i.e. control scheme used by UNIX. Where capability to read, write, or execute is controlled by a 7 bit information about the file.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You should know&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;how inode works&lt;/li&gt;
+
+&lt;li&gt;what is a superblock&lt;/li&gt;
+
+&lt;li&gt;how descriptor works&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;process&quot;&gt;Process&lt;/h2&gt;
+&lt;p id=&#39;partII&#39; /&gt;
+&lt;ul&gt;
+&lt;li&gt;fork return twice&lt;/li&gt;
+
+&lt;li&gt;pipe&lt;/li&gt;
+
+&lt;li&gt;execute(file, arg1, arg2, …, arg_n) return -1 on error&lt;/li&gt;
+
+&lt;li&gt;wait return error if no child processes&lt;/li&gt;
+
+&lt;li&gt;exit(status)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;shell&quot;&gt;Shell&lt;/h2&gt;
+&lt;p id=&#39;partIII&#39; /&gt;
+&lt;p&gt;I implemented shell in SJTU, so I am familiar with it.&lt;/p&gt;
+
+&lt;p&gt;you should know&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;redirection&lt;/strong&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;pipe&lt;/strong&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;background job&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You should have a basic idea how to implement it.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>One-time is good, Two-time is bad</title>
    <link href="http://username.github.io/crypto/2015/04/26/two-time-pad"/>
-   <updated>2015-04-26T00:00:00+08:00</updated>
+   <updated>2015-04-26T00:00:00-07:00</updated>
    <id>http://username.github.io/crypto/2015/04/26/two-time-pad</id>
    <content type="html">&lt;p&gt;Let’s break two-time pad!&lt;/p&gt;
 
@@ -52,7 +140,7 @@
  <entry>
    <title>802.11b WEP</title>
    <link href="http://username.github.io/crypto/2015/04/25/802.11b-WEP"/>
-   <updated>2015-04-25T00:00:00+08:00</updated>
+   <updated>2015-04-25T00:00:00-07:00</updated>
    <id>http://username.github.io/crypto/2015/04/25/802.11b-WEP</id>
    <content type="html">&lt;p&gt;Bugs in 802.11b WEP and let’s break it!&lt;/p&gt;
 
@@ -120,7 +208,7 @@
  <entry>
    <title>My Preference</title>
    <link href="http://username.github.io/life/2015/04/19/INFO"/>
-   <updated>2015-04-19T00:00:00+08:00</updated>
+   <updated>2015-04-19T00:00:00-07:00</updated>
    <id>http://username.github.io/life/2015/04/19/INFO</id>
    <content type="html">&lt;p&gt;干祯超（Louis）的偏好～～&lt;/p&gt;
 
@@ -179,7 +267,7 @@
  <entry>
    <title>Pattern Recognition and Machine Learning</title>
    <link href="http://username.github.io/prml/2015/03/13/PRML"/>
-   <updated>2015-03-13T00:00:00+08:00</updated>
+   <updated>2015-03-13T00:00:00-07:00</updated>
    <id>http://username.github.io/prml/2015/03/13/PRML</id>
    <content type="html">&lt;p&gt;名门正派&lt;/p&gt;
 
@@ -208,7 +296,7 @@
  <entry>
    <title>Coursera DSP</title>
    <link href="http://username.github.io/dsp/2015/01/27/Digitall-Signal-Processing"/>
-   <updated>2015-01-27T00:00:00+08:00</updated>
+   <updated>2015-01-27T00:00:00-08:00</updated>
    <id>http://username.github.io/dsp/2015/01/27/Digitall-Signal-Processing</id>
    <content type="html">&lt;p&gt;写这个文章纯粹是帮助自己做个笔记，记录自己每周学到叻什么 ^_^ ~~~~ &lt;a href=&quot;https://class.coursera.org/dsp-005/lecture&quot;&gt;课程地址&lt;/a&gt;.&lt;/p&gt;
 
@@ -233,7 +321,7 @@
  <entry>
    <title>Coursera Princeton Algorithm</title>
    <link href="http://username.github.io/algorithm/2015/01/26/Princeton-Algorithm"/>
-   <updated>2015-01-26T00:00:00+08:00</updated>
+   <updated>2015-01-26T00:00:00-08:00</updated>
    <id>http://username.github.io/algorithm/2015/01/26/Princeton-Algorithm</id>
    <content type="html">&lt;p&gt;写这个文章纯粹是帮助自己做个笔记，记录自己每周学到叻什么 ^_^ ~~~~ &lt;a href=&quot;https://class.coursera.org/algs4partI-007/lecture&quot;&gt;课程地址&lt;/a&gt;.&lt;/p&gt;
 
@@ -268,7 +356,7 @@
  <entry>
    <title>Maximum Xor</title>
    <link href="http://username.github.io/algorithm/2014/12/18/Max-Xor"/>
-   <updated>2014-12-18T00:00:00+08:00</updated>
+   <updated>2014-12-18T00:00:00-08:00</updated>
    <id>http://username.github.io/algorithm/2014/12/18/Max-Xor</id>
    <content type="html">&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
 
@@ -296,7 +384,7 @@
  <entry>
    <title>Jekyll Introduction</title>
    <link href="http://username.github.io/lessons/2011/12/29/jekyll-introduction"/>
-   <updated>2011-12-29T00:00:00+08:00</updated>
+   <updated>2011-12-29T00:00:00-08:00</updated>
    <id>http://username.github.io/lessons/2011/12/29/jekyll-introduction</id>
    <content type="html">&lt;p&gt;This Jekyll introduction will outline specifically what Jekyll is and why you would want to use it. Directly following the intro we’ll learn exactly &lt;em&gt;how&lt;/em&gt; Jekyll does what it does.&lt;/p&gt;
 
